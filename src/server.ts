@@ -1,7 +1,9 @@
-import express from 'express';
+import app from './app'
 
-const app = express();
+const port = process.env.SERVER_PORT || 8888
 
-app.get("/", (request: Request, response: Response): Promise<Response> => response.send({status: true}));
+const server = app.listen(port, () => {
+  console.log('\x1b[33m%s\x1b[0m', `=> 🚀  Node | Server running on the port: ${port}`)
+})
 
-app.listen(401, () => console.log('Running server node'))
+export default server
