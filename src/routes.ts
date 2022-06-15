@@ -3,6 +3,6 @@ import { Router } from 'express'
 
 const routes = Router()
 
-routes.get('/logs', LogController.index)
+routes.get('/log/:file', LogController.index)
 
 export default routes
