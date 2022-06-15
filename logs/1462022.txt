@@ -1,7 +1,0 @@
-#Versão 1.0 #Data: 14/6/2022 21:55:39 #Campos: provedor 
-http-method status-code uri-path tempo de resposta tamanho do cache-status "MINHA CDN" 312|200|HIT|"GET /robots.txt HTTP/1.1"|100.2
-101|200|MISS "MINHA CDN"|"POST /myImages HTTP/1.1"|319.4
-199|404|MISS "MINHA CDN"|"GET /not-found HTTP/1.1"|142.9
-312|200|INVALIDATE|"GET /robots.txt HTTP/1.1"|245.1
-REFRESH_HIT POSTAGEM "MINHA CDN"
-            
